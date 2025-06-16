@@ -1,0 +1,43 @@
+To run the Aviation NLP Analyzer, please follow the steps below:
+
+1. Clone or Download the Project
+Ensure all project files and folders are available locally, maintaining the following structure:
+
+aviation-nlp-app/
+├── app.py
+├── requirements.txt
+├── .streamlit/
+│   └── secrets.toml
+├── utils/
+│   ├── __init__.py
+│   ├── preprocess.py
+│   ├── visualization.py
+│   ├── modeling.py
+│   ├── graph.py
+│   └── chatbot.py
+
+2. Set Up Python Environment
+Open Terminal and run the following commands:
+
+cd path/to/aviation-nlp-app
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+3. Add OpenAI API Key
+Edit or create the file at:
+
+aviation-nlp-app/.streamlit/secrets.toml
+
+openai_key = "sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+4. Run the App
+Start the Streamlit app by running:
+
+streamlit run app.py
+
+It will open a browser tab with the web interface.
+
+Upload PDF reports using the uploader.
+
